@@ -1,15 +1,41 @@
-# titanic-survival-prediction
-Titanic Survival Prediction Ce projet prédit la survie des passagers du Titanic en utilisant des données comme l'âge, le sexe et la classe. Des modèles de machine learning tels que la régression logistique et les forêts aléatoires sont utilisés pour analyser et prédire les résultats. Basé sur le Titanic Dataset de Kaggle.
 # Titanic Survival Prediction
 
-This project aims to predict the survival of passengers aboard the Titanic using machine learning models. The goal is to predict whether a passenger survived or not based on features such as age, sex, class, and more.
+This project aims to predict the survival of passengers on the Titanic using machine learning models. The data is provided by the Titanic dataset from Kaggle.
 
-## Files
-- `train.csv`: The training dataset containing information about passengers.
-- `test.csv`: The test dataset to make predictions on.
-- `gender_submission.csv`: A sample submission file.
+## Project Description
 
-## Model
-The model used is a Logistic Regression classifier, trained on the training dataset and evaluated on the test dataset.
+The goal of this project is to use historical data from the Titanic disaster to predict whether a passenger survived or not. The dataset includes features such as age, gender, class, and other relevant information about the passengers.
 
+## Dataset
+
+The dataset contains the following columns:
+
+- **PassengerId**: Unique identifier for each passenger.
+- **Pclass**: Ticket class (1 = 1st, 2 = 2nd, 3 = 3rd).
+- **Name**: Name of the passenger.
+- **Sex**: Gender of the passenger.
+- **Age**: Age of the passenger.
+- **SibSp**: Number of siblings or spouses aboard the Titanic.
+- **Parch**: Number of parents or children aboard the Titanic.
+- **Ticket**: Ticket number.
+- **Fare**: Amount of money the passenger paid for the ticket.
+- **Cabin**: Cabin where the passenger stayed.
+- **Embarked**: Port of embarkation (C = Cherbourg; Q = Queenstown; S = Southampton).
+
+## Project Workflow
+
+1. **Data Preprocessing**: Clean the dataset by handling missing values, encoding categorical variables, and scaling numerical features.
+2. **Modeling**: Train different machine learning models (e.g., Logistic Regression, Decision Trees, Random Forest) to predict survival.
+3. **Evaluation**: Evaluate model performance using metrics like accuracy, precision, recall, and F1-score.
+4. **Submission**: Make predictions on the test dataset and prepare the results for submission.
+
+## Setup
+
+1. Clone this repository:
+git clone https://github.com/zinoubjed/titanic-survival-prediction.git
+
+2.  Install the required libraries:
+pip install -r requirements.txt
+
+3.Run the Jupyter notebook or Python script to start the analysis.
 
